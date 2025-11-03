@@ -1,0 +1,56 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contacto</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head><body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container container-narrow">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <span class="brand-square" style="background:#111; display:inline-block;"></span>
+      <span class="ms-3">Kazimir Malévich</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Obras y Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+        <li class="nav-item"><a class="nav-link" href="exhibitions.html">Exhibiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="suprematismo.html">Suprematismo</a></li>
+        <li class="nav-item"><a class="nav-link" href="influencia.html">Influencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="filosofia.html">Filosofía</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="alumnos.html">Alumnos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="section"><div class="container container-narrow">
+  <h2>Contacto</h2>
+  <p>Completá el formulario.</p>
+
+  <div id="formAlert" class="alert alert-danger" style="display:none;"></div>
+
+  <form id="contactForm" novalidate>
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input id="name" class="form-control" required>
+      <div class="invalid-feedback">Ingresá un nombre válido.</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input id="email" class="form-control" required>
+      <div class="invalid-feedback">Ingresá un email válido.</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Mensaje</label>
+      <textarea id="message" class="form-control" rows="4" required></textarea>
+      <div class="invalid-feedback">Escribí un mensaje (mínimo 5 caracteres).</div>
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+</div></main>
+<footer class="footer"><div class="container container-narrow">Contacto — TP</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/formulario.js"></script>
+</body></html>
