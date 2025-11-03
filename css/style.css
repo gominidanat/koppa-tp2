@@ -1,0 +1,121 @@
+
+:root{
+  --bg: #ffffff;
+  --fg: #111;
+  --accent1: #e10600; /* red */
+  --accent2: #f7d117; /* yellow */
+  --accent3: #0b5ed7; /* blue */
+  --muted: #f4f4f4;
+  --max-width: 1100px;
+  --gap: 1rem;
+}
+body{ background:var(--bg); color:var(--fg); font-family: 'Helvetica Neue', Arial, sans-serif; }
+.header-hero{
+  min-height:40vh; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:4rem 1rem;
+  background: linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02));
+}
+.brand-square{ 
+  width:110px; height:110px; display:inline-block; margin-bottom:1rem; border:6px solid #111; transform: rotate(0deg); }
+h1.display-4{ font-weight:700; letter-spacing:2px; }
+.navbar-nav .nav-link{ font-weight:600; letter-spacing:0.5px; }
+.section{ padding:3rem 1rem; }
+.container-narrow{ max-width:var(--max-width); margin:0 auto; }
+
+section{
+padding: 3rem;
+}
+
+.obra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.obra-descripcion {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto 0;
+  max-width: 100%;
+}
+
+
+
+.card-supremat{
+  border:0; background:transparent; padding:1rem 0;
+}
+.thumb{ width:100%; height:220px; display:block; object-fit:cover; background:#eee; border:4px solid #111; }
+
+.footer{
+  padding:2rem 1rem; text-align:center; background:var(--muted);
+  border-top:4px solid #111;
+}
+
+/* Simple grid for gallery thumbnails */
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* Каждый элемент галереи — изображение слева, текст справа */
+.gallery-item {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  border-bottom: 2px solid #111;
+  padding-bottom: 1rem;
+}
+
+.thumb {
+  width: 40%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background: #eee;
+  border: 4px solid #111;
+}
+
+/* Подпись справа */
+.gallery-item figcaption {
+  flex: 1;
+}
+
+.gallery-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.gallery-item p {
+  margin: 0;
+  color: #333;
+  line-height: 1.5;
+}
+/* Form */
+.form-control:focus{ box-shadow:none; border-color:var(--fg); }
+
+/* Small decorative suprematist shapes */
+.shape-row{ display:flex; gap:0.5rem; justify-content:center; margin-top:1rem; }
+.shape{ width:36px; height:36px; border:3px solid #111; display:inline-block; }
+
+/* Responsive tweaks */
+@media (max-width:768px){
+  .header-hero{ padding:2rem 1rem; }
+  .brand-square{ width:80px; height:80px; }
+}
+
+.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
